@@ -1,5 +1,5 @@
 // Service worker: кэширует читалку для офлайн-чтения.
-const CACHE = "uchebnik-v" + "71-1286";
+const CACHE = "uchebnik-v" + "95-1887";
 const ASSETS = ["./", "index.html", "manifest.webmanifest", "apple-touch-icon.png"];
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));
